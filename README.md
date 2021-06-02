@@ -7,3 +7,5 @@
 Deployed at: 
 
 • A glimpse of the web app:
+
+<img src="https://i.imgur.com/jxMeRno.png" alt="img"/>
