@@ -69,7 +69,9 @@
 			<!-- Result -->
 			<div class="results">
                 {% if lower_limit == None and upper_limit == None%}
-                <p class='result-p'> Same teams can't play against each other. Choose correct option. </p>
+                <p class='result-p'>Same team can't play against each other. Choose correct option. </p>
+                {% elif lower_limit == 0 and upper_limit == 0 %}
+                <p class='result-p'>Fill up all fields </p>
                 {% else %}
 				<p class='result-p'>The final predicted score (range): {{ lower_limit }} to {{ upper_limit }}</p>
                 {% endif %}

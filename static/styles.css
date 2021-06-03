@@ -162,7 +162,7 @@ body{
 }
 
 /* Form */
-.form-input{
+.form-input0,.form-input00,.form-input1,.form-input2,.form-input3,.form-input4,.form-input5{
 	background-color: #E9E9E9;
 	width: 370px;
 	height: 30px;

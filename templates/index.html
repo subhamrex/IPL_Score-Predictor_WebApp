@@ -8,6 +8,11 @@
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
         <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+        <META HTTP-EQUIV="Expires" CONTENT="-1">
+        <script>
+           
+         </script>
     </head>
 
     <body>
@@ -67,9 +72,11 @@
 
             <!-- Prediction Form -->
             <div class='div2'>
+                <!-- jQuery -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"  defer></script> 
                 <form action="{{ url_for('predict') }}" method="POST">
                     <!-- Batting Team Dropdown -->
-                    <select class="form-input align-center" name="batting-team">
+                    <select class="form-input0 align-center" name="batting-team">
                         <option value="none">--- Select a Batting team ---</option>
                         <option value="Mumbai Indians">Mumbai Indians</option>
                         <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
@@ -81,7 +88,7 @@
                         <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
                     </select><br>
                     <!-- Bowling Team Dropdown -->
-                    <select class="form-input align-center" name="bowling-team">
+                    <select class="form-input00 align-center" name="bowling-team">
                         <option value="none">--- Select a Bowling team ---</option>
                         <option value="Mumbai Indians">Mumbai Indians</option>
                         <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
@@ -92,13 +99,13 @@
                         <option value="Delhi Daredevils">Delhi Daredevils</option>
                         <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
                     </select><br>
-                    <input class="form-input" type="text" name="overs" placeholder="Overs (>= 5.0) eg. 7.2"><br>
-                    <input class="form-input" type="text" name="runs" placeholder="Runs eg. 64"><br>
-                    <input class="form-input" type="text" name="wickets" placeholder="Wickets eg. 4"><br>
-                    <input class="form-input" type="text" name="runs_in_prev_5" placeholder="Runs scored in previous 5 Overs eg. 42"><br>
-                    <input class="form-input" type="text" name="wickets_in_prev_5" placeholder="Wickets taken in previous 5 Overs eg. 3"><br>
+                    <input class="form-input1" type="text" name="overs" placeholder="Overs (>= 5.0) eg. 7.2"><br>
+                    <input class="form-input2" type="text" name="runs" placeholder="Runs eg. 64"><br>
+                    <input class="form-input3" type="text" name="wickets" placeholder="Wickets eg. 4"><br>
+                    <input class="form-input4" type="text" name="runs_in_prev_5" placeholder="Runs scored in previous 5 Overs eg. 42"><br>
+                    <input class="form-input5" type="text" name="wickets_in_prev_5" placeholder="Wickets taken in previous 5 Overs eg. 3"><br>
 
-			<input type="submit" class="myButton" value="Predict Score">
+			<button type="submit" value="Submit" class="myButton" >Predict Score</button>
         	</form>
             </div>
 
@@ -115,4 +122,5 @@
        </div>
 
     </body>
+    
 </html>
